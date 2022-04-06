@@ -1,0 +1,8 @@
+# Our codes are tested using Python v3.7.2
+torch >= 1.7.1
+transformers == 4.9.2
+datasets >= 1.8.0, <= 1.18.2
+
+numpy      # Our codes are tested using v1.21.5 
+argparse   # Our codes are tested using v1.1
+seqeval
