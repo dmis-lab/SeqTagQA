@@ -8,6 +8,14 @@ Pre-print (2021): https://arxiv.org/abs/2104.07535 (To be updated after the jour
 
 ------
 
-### To be updated shortly
+
+
+
+### How to train
+For datasets, please download from: [here](https://drive.google.com/file/d/1m0GnVlKqvUHfDdpZ9KDDor5EiIqhPwp3/view?usp=sharing)
+
+For example training bash script: please see [`train_list_example.sh`](./train_list_example.sh)
+
+-----
 
 For inquiries, please contact `wjyoon (_at_) korea.ac.kr`.
