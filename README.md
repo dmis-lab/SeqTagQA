@@ -2,7 +2,7 @@
 
 Source codes and resources for "Sequence Tagging for Biomedical Extractive Question Answering."
 
-Status: `Submitted to a journal. Waiting for pier-reviews.`
+Status: `Submitted to a journal. Waiting for review process.`
 
 Pre-print (2021): https://arxiv.org/abs/2104.07535 (To be updated after the journal review)
 
@@ -19,9 +19,9 @@ For example training and evaluation bash script: please see [`train_list_example
 
 ### Detailed instructions
 #### Training
-Following instructions are an example scripts of training LM on BioASQ8b dataset.
+The following instructions are example scripts for training LM on the BioASQ8b dataset.
 
-At the first part, we set environmental variables.
+In the first part, we set environmental variables.
 (We assume that you downloaded and decompressed the datasets in `$HOME/DATA` )
 ```bash
 export SEED=0
@@ -50,7 +50,7 @@ python run_eqa.py --model_struct=linear \
 ```
 
 #### Testing
-Then select the latest checkpoint and predict test dataset using the checkpoint.
+Then select the latest checkpoint and predict the test dataset using the checkpoint.
 ```bash
 export CKPT=84000
 export SUB_OUTPUT_DIR=${OUTPUT_DIR}/checkpoint-${CKPT}
@@ -76,7 +76,7 @@ python detokenize-list.py \
   --output_dir=${SUB_OUTPUT_DIR}
 ```
 
-Finally, evaluate the output with official BioASQ evaluation library. Please download it from [here](https://github.com/BioASQ/Evaluation-Measures). The library requires java.
+Finally, evaluate the output with the official BioASQ evaluation library. Please download it from [here](https://github.com/BioASQ/Evaluation-Measures). The library requires java.
 ```bash
 # Example script of using official BioASQ evaluation library
 export EVAL_LIB=<Cloned official eval code path>/Evaluation-Measures
