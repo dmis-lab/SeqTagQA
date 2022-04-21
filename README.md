@@ -55,7 +55,7 @@ Then select the latest checkpoint and predict test dataset using the checkpoint.
 export CKPT=84000
 export SUB_OUTPUT_DIR=${OUTPUT_DIR}/checkpoint-${CKPT}
 
-python run_eqa.py --model_struct=${METHOD} \
+python run_eqa.py --model_struct=linear \
   --do_train=false --do_eval=false --do_predict=true \
   --model_name_or_path=$SUB_OUTPUT_DIR \
   --per_device_train_batch_size=18 --per_device_eval_batch_size=32 --max_seq_length=512 \
