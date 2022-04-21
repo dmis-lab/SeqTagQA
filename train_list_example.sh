@@ -36,11 +36,10 @@ python run_eqa.py --model_struct=${METHOD} \
 # To Detokenize the output
 export CKPT=84000
 export SUB_OUTPUT_DIR=${OUTPUT_DIR}/checkpoint-${CKPT}
-python detokenize-factoid.py \
+python detokenize-list.py \
   --test_path=${DATA_DIR}/test.tsv \
   --predictions_path=${SUB_OUTPUT_DIR}/predictions.txt \
   --original_test_path=${DATA_DIR}/original_test.json \
-  --score_test_path=${SUB_OUTPUT_DIR}/predictions_prob.txt \
   --output_dir=${SUB_OUTPUT_DIR}
 
 # Example code for official BioASQ evaluation codes
