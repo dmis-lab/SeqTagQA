@@ -2,13 +2,25 @@
 
 Source codes and resources for "Sequence Tagging for Biomedical Extractive Question Answering."
 
-Status: `Submitted to a journal. Waiting for review process.`
-
-Pre-print (2021): https://arxiv.org/abs/2104.07535 (To be updated after the journal review)
+```
+Wonjin Yoon, Richard Jackson, Aron Lagerberg, Jaewoo Kang, 
+Sequence tagging for biomedical extractive question answering, Bioinformatics, 2022;, btac397, 
+https://doi.org/10.1093/bioinformatics/btac397
+```
+Please cite:
+ ```bib
+ @article{yoon-etal-2022-sequence,
+    author = {Yoon, Wonjin and Jackson, Richard and Lagerberg, Aron and Kang, Jaewoo},
+    title = "{Sequence tagging for biomedical extractive question answering}",
+    journal = {Bioinformatics},
+    year = {2022},
+    month = {06},
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btac397},
+}
+ ```
 
 ------
-
-
 
 
 ## How to train/evaluate
