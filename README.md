@@ -1,12 +1,7 @@
-## Sequence Tagging for Biomedical Extractive Question Answering
+# Sequence Tagging for Biomedical Extractive Question Answering
 
 Source codes and resources for "Sequence Tagging for Biomedical Extractive Question Answering."
 
-```
-Wonjin Yoon, Richard Jackson, Aron Lagerberg, Jaewoo Kang, 
-Sequence tagging for biomedical extractive question answering, Bioinformatics, 2022;, btac397, 
-https://doi.org/10.1093/bioinformatics/btac397
-```
 Please cite:
  ```bib
  @article{yoon-etal-2022-sequence,
@@ -19,9 +14,25 @@ Please cite:
     doi = {10.1093/bioinformatics/btac397},
 }
  ```
+```
+Wonjin Yoon, Richard Jackson, Aron Lagerberg, Jaewoo Kang, Sequence tagging for biomedical extractive question answering, Bioinformatics, 2022;, btac397, https://doi.org/10.1093/bioinformatics/btac397
+```
+## _Naturally posed_ biomedical questions
+In the paper, we investigated the characteristics of naturally posed biomedical questions as a preliminary study. 
+As a wish to explore the nature of biomedical question answering with the community, we made the collection of biomedical questions available for download in this repository.
 
-------
+[**See the online preview of the questions here**](https://1drv.ms/x/s!AjwviG8mocn7hbp16IRH8ICJQKcTXw?e=uYwXiV)
 
+The questions are from _Clinical Questions Collection (CQC)_ (D’Alessandro et al., 2004; Ely et al., 1999, 1997) and _PubMed queries_ (Herskovic et al., 2007), with **our _query screening algorithm_ (Please check [Section 3 of our paper](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac397/6609766#364116020) and [appendix](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac397/6609766#supplementary-data)).** 
+
+From our analysis in the sampled question subset, (where an equal number of questions are randomly sampled from two sources of questions), about half of the questions are "Others", which means they are not answerable with current settings. 
+The resons can be various including: 
+* One or more conditions are missing: (as suggested in the [ConditionalQA (Sun et al., 2021)](https://arxiv.org/abs/2110.06884))
+* Incompleteness in our query screening algorithm: (ex. "who diagnostic criteria" or "Will and Joondeph")
+
+#### I am interested in exploring the characteristics of biomedical questions or building QA datasets of naturally posed biomedical questions. (As a future work)
+The work on the characteristics of naturally posed biomedical questions in this paper is a preliminary study and I think there is huge room for improvement. 
+Any researchers who want to collaborate with me on this topic are welcome! To discuss, please contact me: `wonjin.info (_at_) gmail.com`. If you are planning to attend the 10th BioASQ (2022), we can discuss it there!
 
 ## How to train/evaluate
 
@@ -98,4 +109,4 @@ java -Xmx10G -cp $CLASSPATH:$EVAL_LIB/flat/BioASQEvaluation/dist/BioASQEvaluatio
 
 -----
 
-For inquiries, please contact `wjyoon (_at_) korea.ac.kr`.
+For inquiries, please contact `wonjin.info (_at_) gmail.com`.
