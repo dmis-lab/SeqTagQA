@@ -28,11 +28,14 @@ The questions are from _Clinical Questions Collection (CQC)_ (D’Alessandro et 
 From our analysis in the sampled question subset, (where an equal number of questions are randomly sampled from two sources of questions), about half of the questions are "Others", which means they are not answerable with current settings. 
 The resons can be various including: 
 * One or more conditions are missing: (as suggested in the [ConditionalQA (Sun et al., 2021)](https://arxiv.org/abs/2110.06884))
+* The question is too abstractive or requires a long answer that cannot be extracted from a paragraph: (ex. "what is the history of calcium?" or "what can i do?") 
 * Incompleteness in our query screening algorithm: (ex. "who diagnostic criteria" or "Will and Joondeph")
 
 #### I am interested in exploring the characteristics of biomedical questions or building QA datasets of naturally posed biomedical questions. (As a future work)
 The work on the characteristics of naturally posed biomedical questions in this paper is a preliminary study and I think there is huge room for improvement. 
 Any researchers who want to collaborate with me on this topic are welcome! To discuss, please contact me: `wonjin.info (_at_) gmail.com`. If you are planning to attend the 10th BioASQ (2022), we can discuss it there!
+
+-----
 
 ## How to train/evaluate
 
