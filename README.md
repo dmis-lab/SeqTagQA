@@ -45,6 +45,14 @@ For datasets (including biomedical questions), please download them from: [here]
 For example training and evaluation bash script: please see [`train_list_example.sh`](./train_list_example.sh)
 
 ### Detailed instructions
+#### Requirements and Installation
+We tested our codes using python3.8 on a GPU-enabledLlinux (Ubuntu 18.04) machine.
+
+```bash
+pip install --use-feature=2020-resolver -r requirements.txt
+```
+Note that pip updated dependency resolver on Oct 2020: [Announcement](https://discuss.python.org/t/announcement-pip-20-2-release/4863). Please include `--use-feature=2020-resolver` to make the installation work. 
+
 #### Training
 The following instructions are example scripts for training LM on the BioASQ8b dataset.
 
