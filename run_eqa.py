@@ -482,9 +482,9 @@ def main():
 
     # for sanity checking
     logger.info(f"#### Printing pre-processed samples, each from train_dataset and predict_dataset.")
-    show_sample = [train_dataset] if "train" in raw_datasets else []
-    if "test" in raw_datasets:
-        show_sample.append(predict_dataset) 
+    show_sample = [train_dataset] if training_args.do_train else []
+    if training_args.do_predict:
+        show_sample.append(predict_dataset)
 
     for sample_data_type in show_sample:
         for key, values in sample_data_type[0].items():
