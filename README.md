@@ -46,7 +46,8 @@ For example training and evaluation bash script: please see [`train_list_example
 
 ### Detailed instructions
 #### Requirements and Installation
-We tested our codes using python3.8 on a GPU-enabledLlinux (Ubuntu 18.04) machine.
+We tested our codes using python3.8 on a GPU-enabled Linux (Ubuntu 18.04) machine.
+<br>Please install pytorch(>=1.7.1, <2.0) from https://pytorch.org/get-started/previous-versions/ before following this section.
 
 ```bash
 pip install --use-feature=2020-resolver -r requirements.txt
