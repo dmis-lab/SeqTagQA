@@ -1,6 +1,6 @@
 # Sequence Tagging for Biomedical Extractive Question Answering
 
-Source codes and resources for "Sequence Tagging for Biomedical Extractive Question Answering."
+Source codes and resources for [Sequence Tagging for Biomedical Extractive Question Answering.](https://arxiv.org/abs/2104.07535)
 
 Please cite:
  ```bib
@@ -38,6 +38,8 @@ Any researchers who want to collaborate with me on this topic are welcome! To di
 -----
 
 ## How to train/evaluate
+
+#### Note: We recently uploaded a pre-release version of pre-processing code under `preprocessing` folder. 
 
 For datasets (including biomedical questions), please download them from: [here](https://drive.google.com/file/d/1m0GnVlKqvUHfDdpZ9KDDor5EiIqhPwp3/view?usp=sharing)
 <br>To use the BioASQ dataset, you need to register in [the BioASQ website](http://participants-area.bioasq.org/general_information/general_information_registration/) which authorizes the use of the dataset. 
