@@ -1,6 +1,6 @@
 # Our codes are tested using Python v3.7.2
 #torch >= 1.7.1
-transformers == 4.9.2
+transformers == 4.10.0
 datasets >= 1.13.0, <= 1.18.2
 
 numpy      # Our codes are tested using v1.21.5 
